@@ -1,7 +1,5 @@
 # Picus
 <!-- information document for the project - Andrew -->
-Final Year Project for UU 2020.
-
 Libraries/requirements used:
 1. Scrapy - Crawls the websites for our project
 2. MongoDB - Database server for storing scraped content
