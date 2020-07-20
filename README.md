@@ -2,7 +2,7 @@
 <!-- information document for the project - Andrew -->
 Final Year Project for UU 2020.
 
-Libraries used:
+Libraries/requirements used:
 1. Scrapy - Crawls the websites for our project
 2. MongoDB - Database server for storing scraped content
 3. PyMongo - Allows Scrapy, MongoDB and FLASK to interact
