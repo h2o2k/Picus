@@ -1,0 +1,22 @@
+<!-- This is where the block content is for our application - Andrew -->
+{% extends "layout.html" %}
+{% block content %}
+  {% for responses in responses %}
+    <article class="media content-section">
+      <div class="media-body">
+        <div class="article-metadata">
+          <a class="mr-2">{{ responses.author }}</a>
+          <small class="text-muted">{{ responses.uploadtime }}</small>
+        </div>
+        <h2><a class="article-title" href="{{ responses.url }}">{{ responses.title }}</a></h2>
+        <div class="article-together">
+          <img class="article-img" src="{{ responses.img }}"/>
+          <p class="article-content">{{ responses.blurb }}</p>
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+  <div class="pagecolours">
+    {{ pagination.links }}
+  </div>
+{% endblock content %}

@@ -1,0 +1,76 @@
+<!-- This is the layout of our overall website, other webpages will inherit the layout from this page - Andrew -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}"> <!-- Here is where we use the URL for which allows us to locate the static CSS files -->
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="/">Picus News</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="/">Home</a>
+              <a class="nav-item nav-link" href="/local">Local</a>
+              <a class="nav-item nav-link" href="/world">World</a>
+              <a class="nav-item nav-link" href="/technology">Technology</a>
+              <a class="nav-item nav-link" href="/science">Science</a>
+              <a class="nav-item nav-link" href="/entertainment">Entertainment</a>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Sources
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/bbc">BBC</a>
+                    <a class="dropdown-item" href="/ghacks">gHacks</a>
+                    <a class="dropdown-item" href="/theguardian">The Guardian</a>
+                    <a class="dropdown-item" href="/reddit">Reddit</a>
+                    <a class="dropdown-item" href="/wired">Wired</a>
+                  </div>
+             </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8">
+          {% block content %}{% endblock %}
+        </div>
+        <div class="col-md-4">
+          <div class="content-section">
+            <h3>New sources</h3>
+            <p class='text-muted'>Browse via news source!
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-light"><a href="/bbc">BBC</a></li>
+                <li class="list-group-item list-group-item-light"><a href="/ghacks">gHacks</a></li>
+                <li class="list-group-item list-group-item-light"><a href="/theguardian">The Guardian</a></li>
+                <li class="list-group-item list-group-item-light"><a href="/reddit">Reddit</a></li>
+                <li class="list-group-item list-group-item-light"><a href="/wired">Wired</a></li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
