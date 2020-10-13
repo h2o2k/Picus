@@ -1,7 +1,7 @@
 # Picus
 > Web based content aggregator written in Python.
 
-![](Header.png)
+![](header.png)
 
 ## Requirements
 1. Scrapy - Web crawler written in Python
