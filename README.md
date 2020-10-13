@@ -17,8 +17,8 @@
 1. Run mangod to start the database service or run MongoDB Compass for a GUI version
 2. Run spiders individually or run the entire project via "python app.py"
 3. Check compass to ensure that data is entering into the database
-4. Run flask individually or ignore if you have ran via "python app.py"
-5. Navigate to 'localhost:5000' to view the website
+4. Run flask individually via "routes.py" or ignore if you have ran via "python app.py"
+5. Navigate to 'localhost:5000' to view the application
 
 ## Future additions
 1. Create the scrapy project
