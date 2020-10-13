@@ -1,6 +1,8 @@
 # Picus
 > Web based content aggregator written in Python.
 
+![](header.png)
+
 ## Requirements
 1. Scrapy - Web crawler written in Python
 2. MongoDB - Database for storing scraped content
