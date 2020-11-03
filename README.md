@@ -9,8 +9,8 @@
 3. PyMongo - Scrapy, MongoDB and Flask to interact
 4. Flask - Framework to create web applications
 5. HTML, CSS, JavaScript & Bootstrap - Webpage formatting
-6. Scrapy-do - Scheduling Scrapy to run on at set intervals
-7. flask_paginate - Pagination on the Flask application
+6. Scrapy-do - Scheduling Scrapy to run on at set intervals (Needs to be setup locally)
+7. flask_paginate - Pagination on the Flask application 
 
 ## Installation
 1. Clone repository and navigate into the directory via a CLI
